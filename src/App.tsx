@@ -1,4 +1,4 @@
-// src/App.tsx
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SubmitSurvey from "./pages/SubmitSurvey";
 import SurveyList from "./components/SurveyList";
