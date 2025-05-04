@@ -17,7 +17,7 @@ export default function Dashboard() {
     }
   }, [location, navigate]);
   useEffect(() => {
-    axios.get("http://localhost:3000/surveys").then((res) => setSurveys(res.data));
+    axios.get("https://survey-backend-hm76.onrender.com/surveys").then((res) => setSurveys(res.data));
   }, []);
 
   return (

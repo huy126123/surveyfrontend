@@ -9,11 +9,11 @@ function TakeSurvey() {
   const [surveyJson, setSurveyJson] = useState<any>(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/surveys/${id}`).then(res => setSurveyJson(res.data.json));
+    axios.get(`https://survey-backend-hm76.onrender.com/surveys/${id}`).then(res => setSurveyJson(res.data.json));
   }, [id]);
 
   const handleComplete = (survey: any) => {
-    axios.post('http://localhost:3000/responses', {
+    axios.post('https://survey-backend-hm76.onrender.comresponses', {
       surveyId: id,
       userId: 'mock-user-id',
       answers: survey.data,
